@@ -29,4 +29,4 @@ jobs:
       - name: test_look vi
         run: |
           cd /.test
-          ls -l | tee test.json
+          cat test.json

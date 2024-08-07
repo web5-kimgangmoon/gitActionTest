@@ -14,9 +14,9 @@ jobs:
 
       - name: test vi
         run: |
-          cd ~/
           mkdir ~/test
           chmod 777 ~/test
+          cd ~/test
           touch tester
           vi tester -e
           i

@@ -14,8 +14,8 @@ jobs:
 
       - name: test vi
         run: |
-          mkdir -p /.test
-          chmod 777 /.test
+          sudo mkdir -p /.test
+          sudo chmod 777 /.test
           cd ~/test
           touch tester
           vi tester -e

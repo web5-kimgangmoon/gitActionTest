@@ -1,0 +1,29 @@
+name: The test
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test_vi:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v4
+
+      - name: test vi
+        run: |
+          cd /
+          touch tester
+          vi tester
+          i
+          12345
+          dsdads
+          zzzzz
+          :wq
+
+      - name: test_look vi
+        run: |
+          cd /
+          ls -l | tee tester

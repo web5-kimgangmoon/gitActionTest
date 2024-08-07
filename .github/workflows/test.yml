@@ -17,15 +17,16 @@ jobs:
           sudo mkdir -p /.test
           sudo chmod 777 /.test
           cd /.test
-          touch tester
-          vi tester -e
-          i
-          12345
-          dsdads
-          zzzzz
-          :wq
+          echo '{' >> test.json
+          echo '"development":{' >> test.json
+          echo '"username":"root"' >> test.json
+          echo ',"password":"1234qwer"' >> test.json
+          echo ',"host":"127.0.0.1"' >> test.json
+          echo ',"database":"test"' >> test.json
+          echo ',"dialect":"mysql"}' >> test.json
+          echo '}' >> test.json
 
       - name: test_look vi
         run: |
           cd /.test
-          ls -l | tee tester
+          ls -l | tee test.json

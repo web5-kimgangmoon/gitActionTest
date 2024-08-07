@@ -14,7 +14,9 @@ jobs:
 
       - name: test vi
         run: |
-          cd /
+          cd ~/
+          mkdir ~/test
+          chmod 777 ~/test
           touch tester
           vi tester
           i
@@ -25,5 +27,5 @@ jobs:
 
       - name: test_look vi
         run: |
-          cd /
+          cd ~/test
           ls -l | tee tester

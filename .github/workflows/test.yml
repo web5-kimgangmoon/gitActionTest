@@ -18,7 +18,7 @@ jobs:
           mkdir ~/test
           chmod 777 ~/test
           touch tester
-          vi tester
+          vi tester -e
           i
           12345
           dsdads

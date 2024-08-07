@@ -16,7 +16,7 @@ jobs:
         run: |
           sudo mkdir -p /.test
           sudo chmod 777 /.test
-          cd ~/test
+          cd /.test
           touch tester
           vi tester -e
           i
